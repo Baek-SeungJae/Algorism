@@ -1,10 +1,5 @@
 package programmers;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Queue;
-
 public class Programmers_42585 {
 
 	public static void main(String[] args) {
