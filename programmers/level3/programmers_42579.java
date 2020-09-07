@@ -9,9 +9,14 @@ import java.util.Set;
 public class programmers_42579 {
 
 	public static void main(String[] args) {
-		String[] genres = new String[] {"a", "a", "b", "a"};
-		int[] plays = new int[] {1,2,1,2};
-		System.out.println(solution(genres, plays));
+		
+		String[] genres = new String[] {"c","a","a","b"};
+		int[] plays = new int[] {1,3,3,3};
+		
+		int[] sol = solution(genres, plays);
+		for(int i=0; i<sol.length;i++) {
+			System.out.println(sol[i]);
+		}
 	}
 
 	public static int[] solution(String[] genres, int[] plays) {
@@ -73,7 +78,7 @@ public class programmers_42579 {
         int[] answer = new int[ans.length];
         for(int i=0; i<ans.length; i++) {
         	answer[i] = Integer.parseInt(ans[i]);
-        	System.out.println(answer[i]);
+        	//System.out.println(answer[i]);
         }
         return answer;
     }
