@@ -14,22 +14,22 @@ public class programmers_17683 {
 	}
 
 	public static String solution(String m, String[] musicinfos) {
-		/* Map?•ˆ?— ArrayListë¥? ?‚¬?š©?•œ êµ¬ì¡° */
+		/* Mapì•ˆì— ArrayListë¥¼ ì‚¬ìš©í•œ êµ¬ì¡° */
 		Map<Integer, ArrayList<String>> map = new TreeMap<>(Comparator.reverseOrder());
 		
-		/* ?¬?ƒ?‹œê°„ì„ TreeMap êµ¬ì¡°ë¡? ?¡?•„?„œ ?¬?ƒ?‹œê°„ì´ ê¸? ?ˆœ?„œ??ë¡? ? •? ¬?˜ê²? ?•¨ */
+		/* ì¬ìƒì‹œê°„ì„ TreeMap êµ¬ì¡°ë¡œ ì¡ì•„ì„œ ì¬ìƒì‹œê°„ì´ ê¸´ ìˆœì„œëŒ€ë¡œ ì •ë ¬ë˜ê²Œ í•¨ */
 		for (int i = 0; i < musicinfos.length; i++) {
 			
-			/* musicinfosë¥? ë¶„í•  */
+			/* musicinfosë¥¼ ë¶„í•  */
 			String[] music = musicinfos[i].split(",");
-			/* #ë¶™ì? ?Œ?„ ?†Œë¬¸ìë¡? ??ì²? */
+			/* #ë¶™ì€ ìŒì„ ì†Œë¬¸ìë¡œ ëŒ€ì²´ */
 			String lyric = music[3].replaceAll("C#", "c").replaceAll("D#", "d").replaceAll("F#", "f")
 					.replaceAll("G#", "g").replaceAll("A#", "a").replaceAll("B#", "b").replaceAll("#E", "e");
 			
-			/* ?‹œê°„ê²½ê³¼ë?? ê³„ì‚°?•´ì£¼ëŠ” ?•¨?ˆ˜, intë¡? ë¦¬í„´*/
+			/* ì‹œê°„ê²½ê³¼ë¥¼ ê³„ì‚°í•´ì£¼ëŠ” í•¨ìˆ˜, intë¡œ ë¦¬í„´*/
 			int time = time(music[0], music[1]);
 			
-			/* ?‹œê°„ê²½ê³¼ì— ë§ì¶°?„œ ?¬?ƒ?‹œê°„ê³¼ ê°??‚¬ë¥? ë°˜ë³µ? ?œ¼ë¡? StringBuilder?— ???¥?•˜ê³? map?•ˆ?—?ˆ?Š” ArrayList?— ???¥ */
+			/* ì‹œê°„ê²½ê³¼ì— ë§ì¶°ì„œ ì¬ìƒì‹œê°„ê³¼ ê°€ì‚¬ë¥¼ ë°˜ë³µì ìœ¼ë¡œ StringBuilderì— ì €ì¥í•˜ê³  mapì•ˆì—ìˆëŠ” ArrayListì— ì €ì¥ */
 			StringBuilder sb = new StringBuilder("");
 			for (int j = 0; j <= time; j++) {
 				sb.append(lyric.charAt(j % lyric.length()));
@@ -42,9 +42,9 @@ public class programmers_17683 {
 			}
 		}
 		System.out.println(map);
-		/* answer?˜ ?””?´?Š¸?Š” None */
+		/* answerì˜ ë””í´íŠ¸ëŠ” None */
 		String answer = "(None)";
-		/* map?„  ?ˆœ?šŒ?•˜ë©´ì„œ ê°??‚¬ê°? ?¬?•¨?˜?–´ ?ˆ?œ¼ë©? ë¦¬í„´, TreeMap?´ë¯?ë¡? ?‹œê°„ìˆœ?œ¼ë¡? ? •? ¬?˜?–´?ˆê³?, ArrayList?´ë¯?ë¡? ë¨¼ì??…? ¥?œ ê³¡ì •ë³´ë?? ë°˜í™˜ */
+		/* mapì„  ìˆœíšŒí•˜ë©´ì„œ ê°€ì‚¬ê°€ í¬í•¨ë˜ì–´ ìˆìœ¼ë©´ ë¦¬í„´, TreeMapì´ë¯€ë¡œ ì‹œê°„ìˆœìœ¼ë¡œ ì •ë ¬ë˜ì–´ìˆê³ , ArrayListì´ë¯€ë¡œ ë¨¼ì €ì…ë ¥ëœ ê³¡ì •ë³´ë¥¼ ë°˜í™˜ */
 		for (Integer key : map.keySet()) {
 			for (int i = 0; i < map.get(key).size(); i++) {
 				String changedValue = m.replaceAll("C#", "c").replaceAll("D#", "d").replaceAll("F#", "f")
@@ -59,7 +59,7 @@ public class programmers_17683 {
 		return answer;
 	}
 
-	/* ?Œ?•…?´ ëª? ë¶„ë™?•ˆ ?¬?ƒ?˜?—ˆ?Š”ì§? */
+	/* ìŒì•…ì´ ëª‡ ë¶„ë™ì•ˆ ì¬ìƒë˜ì—ˆëŠ”ì§€ */
 	public static int time(String start, String end) {
 		int hour = Integer.parseInt(end.split(":")[0]) - Integer.parseInt(start.split(":")[0]);
 		int minute = Integer.parseInt(end.split(":")[1]) - Integer.parseInt(start.split(":")[1]);
