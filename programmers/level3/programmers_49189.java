@@ -15,7 +15,8 @@ public class programmers_49189 {
 		for (int i = 0; i < edge.length; i++) {
 			graph.put(edge[i][0], edge[i][1]);
 		}
-		//graph.printGraphToAdjArr();
+		
+		graph.printGraphToAdjArr();
 		
 		graph.bfs(1);
 		
@@ -54,7 +55,7 @@ public class programmers_49189 {
 		public void printGraphToAdjArr() {
 			for (int i = 0; i < arrGraph.length; i++) {
 				for (int j = 0; j < arrGraph[i].length; j++) {
-					System.out.print(" " + arrGraph[i][j]);
+					System.out.print("," + arrGraph[i][j]);
 				}
 				System.out.println();
 			}
