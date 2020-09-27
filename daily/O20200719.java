@@ -1,4 +1,4 @@
-package dally;
+package daily;
 
 import java.util.Random;
 

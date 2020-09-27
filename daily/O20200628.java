@@ -1,4 +1,4 @@
-package dally;
+package daily;
 
 public class O20200628 {
 
