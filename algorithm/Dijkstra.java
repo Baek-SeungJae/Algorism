@@ -1,5 +1,8 @@
 package algorithm;
-
+/*
+ * 주요내용 : 그래프, 다익스트라, 탐색
+ *	작성자 : 백승재  
+ */
 public class Dijkstra {
 
 	public static void main(String[] args) {
@@ -79,7 +82,6 @@ public class Dijkstra {
         }
         System.out.println();
         System.out.println(dist[end]);
-        System.out.println(s);
-        
+        System.out.println(s);  
     }
 }

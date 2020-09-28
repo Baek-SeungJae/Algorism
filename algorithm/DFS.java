@@ -1,5 +1,8 @@
 package algorithm;
-
+/*
+ * 주요내용 : 그래프, 탐색
+ *	작성자 : 백승재  
+ */
 public class DFS {
 
 	public static void main(String[] args) {

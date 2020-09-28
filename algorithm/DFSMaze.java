@@ -1,5 +1,8 @@
 package algorithm;
-
+/*
+ * 주요내용 : 배열, 탐색
+ *	작성자 : 백승재  
+ */
 public class DFSMaze {
 
 		

@@ -1,5 +1,9 @@
 package algorithm;
-
+/*
+ * 주요내용 : 순열, 중복순열, 조합, 중복조합
+ *	작성자 : 백승재 
+ *    출처 : https://limkydev.tistory.com/178
+ */
 import java.util.LinkedList;
 import java.util.Scanner;
 

@@ -1,5 +1,8 @@
 package algorithm;
-
+/*
+ * 주요내용 : 맵을 값으로 정렬
+ *	작성자 : 백승재  
+ */
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
