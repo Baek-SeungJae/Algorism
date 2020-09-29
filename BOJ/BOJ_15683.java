@@ -1,9 +1,14 @@
 package BOJ;
-
+/*
+ * 백준 : 감시
+ * 링크 : https://www.acmicpc.net/problem/14502
+ * 주요내용 : 구현, dfs
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class BOJ_15683 {
+	/* 문제에서 주어진 조건에서 답이 될 수 있는 최댓값 */
 	static int answer = 64;
 
 	public static void main(String[] args) {
@@ -19,8 +24,9 @@ public class BOJ_15683 {
 		System.out.println(solution(map));
 
 	}
-
+	
 	public static int solution(char[][] map) {
+		/* cctv의 좌표 */
 		ArrayList<ArrayList<Integer>> cctv = cctv(map);
 		dfs_recursion(map, cctv, 0);
 		return answer;
@@ -31,6 +37,7 @@ public class BOJ_15683 {
 		for (int i = 0; i < map.length; i++) {
 			for (int j = 0; j < map[i].length; j++) {
 				if (map[i][j] != '0' && map[i][j] != '6') {
+					/* cctv의 좌표 i,j를 배열에 저장 문제의 조건대로라면 최대 8개 */
 					ArrayList<Integer> coordinate = new ArrayList<Integer>();
 					coordinate.add(i);
 					coordinate.add(j);
@@ -50,6 +57,7 @@ public class BOJ_15683 {
 		/* 0:위 1:오른쪽 2:아래 3:왼쪽 */
 		for (int i = 0; i < dirs.length; i++) {
 			switch (dirs[i]) {
+			/* dirs[i]는 감시하는 방향, 벽(6)이면 종료, cctv면 넘기고 진행, 둘다 아니면 #으로 변환 */
 			case 0:
 				for (int j = y; j >= 0; j--) {
 					if (copyedMap[j][x] == '6') {
@@ -103,12 +111,14 @@ public class BOJ_15683 {
 		if (idx == cctv.size()) {
 			// print(map);
 			//System.out.println(answer);
+			/* 최솟값 찾기 */
 			answer = Math.min(answer, find_blind(map));
 			return;
 		}
-
+		/* cctv좌표에서 y,x를 추출 */
 		int y = cctv.get(idx).get(0);
 		int x = cctv.get(idx).get(1);
+		/* dirs는 cctv별 감시방향, map은 cctv 종류 */
 		int[][] dirs = null;
 		switch (map[y][x]) {
 		case '1':

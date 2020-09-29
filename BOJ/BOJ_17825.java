@@ -1,8 +1,9 @@
 package BOJ;
-
-import java.util.LinkedList;
-import java.util.Scanner;
-
+/*
+ * 백준 : 주사위윷놀이
+ * 링크 : https://www.acmicpc.net/problem/17825
+ * 주요내용 : 구현 실패, 추후 수정
+ */
 public class BOJ_17825 {
 	public static void main(String[] args) {
 

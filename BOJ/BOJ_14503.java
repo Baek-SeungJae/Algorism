@@ -1,5 +1,9 @@
 package BOJ;
-
+/*
+ * 백준 : 로봇청소기
+ * 링크 : https://www.acmicpc.net/problem/14503
+ * 주요내용 : 구현, 청소기가 더이상 갈 수 있는 방향이 없으면 종료
+ */
 import java.util.Scanner;
 
 public class BOJ_14503 {

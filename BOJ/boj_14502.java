@@ -1,9 +1,13 @@
 package BOJ;
-
+/*
+ * 백준 : 연구소
+ * 링크 : https://www.acmicpc.net/problem/14502
+ * 주요내용 : 조합, dfs
+ */
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class boj_14502 {
+public class BOJ_14502 {
 	/* 변수선언 단 */
 	static int[][] laboratory;
 	static int[][] laboratory_copy;
