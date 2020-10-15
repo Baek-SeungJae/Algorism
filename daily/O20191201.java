@@ -1,15 +1,13 @@
 package daily;
 /*
  
-Á¤¼ö ¹è¿­°ú Å¸°Ù ¼ıÀÚ°¡ ÁÖ¾îÁö¸é, ÇÕÀÌ Å¸°Ù°ªÀÌ µÇ´Â µÎ ¿ø¼ÒÀÇ ÀÎµ¦½º¸¦ Ã£À¸½Ã¿À. 
-´Ü, ½Ã°£º¹Àâµµ O(n) ¿©¾ß ÇÕ´Ï´Ù.
-
+ì •ìˆ˜ ë°°ì—´ê³¼ íƒ€ê²Ÿ ìˆ«ìê°€ ì£¼ì–´ì§€ë©´, í•©ì´ íƒ€ê²Ÿê°’ì´ ë˜ëŠ” ë‘ ì›ì†Œì˜ ì¸ë±ìŠ¤ë¥¼ ì°¾ìœ¼ì‹œì˜¤.
+ë‹¨, ì‹œê°„ë³µì¡ë„ O(n) ì—¬ì•¼ í•©ë‹ˆë‹¤.
 Given an array of integers and a target integer, find two indexes of the array element that sums to the target number.
 
-¿¹Á¦)
-Input: [2, 5, 6, 1, 10], Å¸°Ù 8
-Output: [0, 2] // ¹è¿­[0] + ¹è¿­[2] = 8
-
+ì˜ˆì œ)
+Input: [2, 5, 6, 1, 10], íƒ€ê²Ÿ 8
+Output: [0, 2] // ë°°ì—´[0] + ë°°ì—´[2] = 8
  */
 import java.util.ArrayList;
 
@@ -38,7 +36,7 @@ public class O20191201 {
 		if(b!=-1)
 			System.out.println(a+","+b);
 		else
-			System.out.println("Á¤´ä¾øÀ½");
+			System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 }
 

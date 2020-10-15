@@ -2,7 +2,7 @@ package daily;
 /*
 Given an integer N, find the number of possible balanced parentheses with N opening and closing brackets.
 
-����)
+Input 개수만큼 괄호 열고 닫는 문제
 Input: 1
 Output: ["()"]
 
@@ -12,11 +12,11 @@ Output: ["(())", "()()"]
 Input: 3
 Output: ["((()))", "(()())", "()(())", "(())()", "()()()"]
  */
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class A20191117 {
-
 	public static void main(String[] args) {
 		List<String> ans = new ArrayList<String>();
 		solution(ans, "", 0, 0, 3);

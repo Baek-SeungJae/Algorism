@@ -1,19 +1,16 @@
 package daily;
 /*
-¾È³çÇÏ¼¼¿ä, ¸ÅÀÏÇÁ·Î±×·¡¹Ö ÀÌ¹øÁÖ ¹®Á¦ÀÔ´Ï´Ù.
-
-ÇÇº¸³ªÄ¡ ¹è¿­Àº 0°ú 1·Î ½ÃÀÛÇÏ¸ç, ´ÙÀ½ ÇÇº¸³ªÄ¡ ¼ö´Â ¹Ù·Î ¾ÕÀÇ µÎ ÇÇº¸³ªÄ¡ ¼öÀÇ ÇÕÀÌ µÈ´Ù. Á¤¼ö NÀÌ ÁÖ¾îÁö¸é, Nº¸´Ù ÀÛÀº ¸ğµç Â¦¼ö ÇÇº¸³ªÄ¡ ¼öÀÇ ÇÕÀ» ±¸ÇÏ¿©¶ó.
 
 Fibonacci sequence starts with 0 and 1 where each fibonacci number is a sum of two previous fibonacci numbers. Given an integer N, find the sum of all even fibonacci numbers.
+í”¼ë³´ë‚˜ì¹˜ ìˆ˜ì—´ì—ì„œ ì§ìˆ˜ë§Œ ë”í•˜ëŠ” ë¬¸ì œ
 
-¿¹Á¦)
 Input: N = 12
-Output: 10 // 0, 1, 2, 3, 5, 8 Áß Â¦¼öÀÎ 2 + 8 = 10.
+Output: 10 // 0, 1, 2, 3, 5, 8 ï¿½ï¿½ Â¦ï¿½ï¿½ï¿½ï¿½ 2 + 8 = 10.
 */
 
 public class O20191110 {
 	public static void main(String[] args) {
-		int input = 12; // ÆíÀÇ»ó ÀÔ·ÂÀ¸·Î ÁÖÁö ¾Ê¾ÒÀ½
+		int input = 12; // ï¿½ï¿½ï¿½Ç»ï¿½ ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¾ï¿½ï¿½ï¿½
 		int sum = 0;
 		int a = 1;
 		int b = 2;
