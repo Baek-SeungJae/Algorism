@@ -1,6 +1,6 @@
 package programmers.level3;
 
-public class programmers_1830 {
+public class programmers_1830_fail {
 
 	public static void main(String[] args) {
 

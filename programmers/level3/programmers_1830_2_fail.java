@@ -2,7 +2,7 @@ package programmers.level3;
 
 import java.util.ArrayList;
 
-public class programmers_1830_2 {
+public class programmers_1830_2_fail {
 
 	public static void main(String[] args) {
 
